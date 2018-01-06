@@ -21,9 +21,9 @@ public class Conexion {
         Connection connection=null;
         try{
             String driverClassName = "oracle.jdbc.driver.OracleDriver";
-            String driverUrl="jdbc:oracle:thin:@localhost:1521:XE";
+            String driverUrl="jdbc:oracle:thin:@localhost:1521:XE";//Change if you dont use OracleDB
             Class.forName(driverClassName);
-            connection=DriverManager.getConnection(driverUrl,"PELIS","1234Qwer");
+            connection=DriverManager.getConnection(driverUrl,"PELIS","1234Qwer");//Change USER and PASSWORD.
             System.out.println("Conexión establecida");
         }
         catch(Exception e){
