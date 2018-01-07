@@ -1,4 +1,4 @@
-App de Resgistro de Películas
+App de Registro de Películas
 Posee las funciones de agregar películas y categorías, buscar por texto o agrupar por
 categorías,modificar, eliminar y listar.
 Está configurada para funcionar con OracleDB, utiliza dos tablas: Categoría y Película
@@ -6,7 +6,7 @@ Está configurada para funcionar con OracleDB, utiliza dos tablas: Categoría y 
 Script Tablas
 
 
-Categoria
+Categoría
 
 CREATE TABLE "CATEGORIA" 
    (	"ID" NUMBER(11,0) NOT NULL ENABLE, 
@@ -14,7 +14,7 @@ CREATE TABLE "CATEGORIA"
 	 CONSTRAINT "PK_CATEGORIA" PRIMARY KEY ("ID"));
      
      
-Pelicula
+Película
 
 CREATE TABLE "PELICULA" 
    (	"CODIGO" NUMBER(11,0) NOT NULL ENABLE, 
