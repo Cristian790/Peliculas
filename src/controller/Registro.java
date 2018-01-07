@@ -549,7 +549,8 @@ public class Registro {
         peliculas.addColumn("Nombre");
         
         table.setModel(peliculas);
-        String query="SELECT * FROM CATEGORIA JOIN PELICULA USING(ID) WHERE LOWER(NOMBRE) LIKE '%"+palabra+"%'";
+        String query="SELECT * FROM CATEGORIA JOIN PELICULA USING(ID) WHERE LOWER(NOMBRE) LIKE '%"+palabra+"%' OR CODIGO LIKE '%"+palabra+"%'"
+                + "OR LOWER(DESCRIPCION) LIKE '%"+palabra+"%' OR ID LIKE '%"+palabra+"%'";
         Object[]datos=new Object[9];
         try{
             Statement st=conexion.createStatement();
